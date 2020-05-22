@@ -2,6 +2,7 @@ notifications:
   slack: travisnotific-r1j8011:vSTulN5f4aIY18sZ46Og7kcp
   template:
     - Build <%{build_url}|#%{build_number}> (<%{compare_url}|%{commit}>) of %{repository_slug}@%{branch} by %{author} %{*result*} in %{duration}
+    - *result*
 language: python
 dist: trusty
 cache: false

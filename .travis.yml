@@ -1,5 +1,8 @@
 notifications:
   slack: travisnotific-r1j8011:vSTulN5f4aIY18sZ46Og7kcp
+  template:
+      - "%{repository_slug} (%{commit}) : %{message}"
+      - "Build details: %{build_url}"
 language: python
 dist: trusty
 cache: false

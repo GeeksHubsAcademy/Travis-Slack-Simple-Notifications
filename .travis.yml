@@ -1,0 +1,9 @@
+notifications:
+  slack: travisnotific-r1j8011:vSTulN5f4aIY18sZ46Og7kcp
+language: python
+dist: trusty
+cache: false
+python:
+ - "3.6"
+install: pip install -e .
+script: pytest
